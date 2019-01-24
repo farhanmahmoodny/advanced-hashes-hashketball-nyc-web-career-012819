@@ -117,6 +117,18 @@ def game_hash
 }
 end
 
+def player_number
+  game_hash.each do |key, value|
+    binding.pry
+    value.each do |key_2, value_2|
+      binding.pry
+    end
+  end
+end
+binding.pry
+
+
+
 def num_points_scored(player)
   game_hash[:home][:players].each do |player_name, attribute|
     if player_name == player
